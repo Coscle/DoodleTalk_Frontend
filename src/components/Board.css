@@ -1,0 +1,102 @@
+.drawing-app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0; /* 배경색 추가 */
+  padding: 20px;
+  border-radius: 10px; /* 전체 컨테이너의 모서리 둥글게 */
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  background: #ffffff; /* 배경색 추가 */
+  padding: 10px;
+  border-radius: 8px; /* 컨트롤 영역의 모서리 둥글게 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+.color-picker, .line-width-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.color-picker label, .line-width-picker label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333; /* 글자 색 변경 */
+}
+
+.color-picker input {
+  border: none; /* 기본 테두리 제거 */
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  background-color: transparent; /* 배경색 투명으로 */
+  appearance: none; /* 기본 브라우저 스타일 제거 */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.color-picker input::-webkit-color-swatch {
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.color-picker input::-moz-color-swatch {
+  border-radius: 5px;
+  border: 2px solid #ccc;
+}
+
+.line-width-picker input[type="range"] {
+  width: 150px;
+}
+
+.line-width-picker span {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.pen-button {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #4caf50; /* 녹색 */
+}
+
+.pen-button:hover {
+  background-color: #388e3c; /* 어두운 녹색 */
+}
+
+.clear-button {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #f44336; /* 빨간색 */
+  white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+  margin-left: 10px; /* 버튼 사이에 간격 추가 */
+}
+
+.clear-button:hover {
+  background-color: #d32f2f; /* 어두운 빨간색 */
+}
+
+button:focus {
+  outline: none;
+}

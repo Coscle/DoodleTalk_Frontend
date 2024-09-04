@@ -1,0 +1,59 @@
+.main-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #f9f9f9; /* 배경색 */
+  height: 100vh; /* 화면 전체 높이 */
+  padding: 40px; /* 패딩을 늘려서 여백 추가 */
+}
+
+.main-image {
+  width: 50%; /* 이미지의 너비를 화면의 90%로 설정 */
+  max-width: 800px; /* 최대 너비를 늘림 */
+  height: auto; /* 비율 유지 */
+  margin-bottom: 30px; /* 이미지와 버튼 사이의 여백 */
+  border-radius: 15px; /* 이미지 모서리 둥글게 */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* 이미지에 그림자 효과 추가 */
+}
+
+h1 {
+  font-size: 3rem; /* 제목 폰트 크기 확대 */
+  margin-bottom: 30px; /* 제목과 버튼 사이의 여백 */
+  color: #333; /* 텍스트 색상 */
+}
+
+.button-container {
+  display: flex;
+  gap: 20px; /* 버튼 사이의 간격을 늘림 */
+}
+
+.button-container Link, .button-container button {
+  display: inline-block; /* 링크와 버튼 모두 인라인 블록으로 설정 */
+}
+
+.main-button {
+  background-color: #4caf50; /* 버튼 배경색 */
+  border: none;
+  color: white;
+  padding: 20px 40px; /* 버튼 패딩을 늘려서 크기 확대 */
+  text-align: center;
+  font-size: 1.5rem; /* 버튼 텍스트 폰트 크기 확대 */
+  border-radius: 8px; /* 버튼 모서리 둥글게 */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  white-space: nowrap; /* 텍스트가 한 줄로 표시되도록 설정 */
+  display: inline-flex; /* 버튼을 인라인 플렉스 컨테이너로 설정 */
+  align-items: center; /* 수직 가운데 정렬 */
+  justify-content: center; /* 수평 가운데 정렬 */
+  min-width: 150px; /* 버튼의 최소 너비 설정 */
+}
+
+.main-button:hover {
+  background-color: #388e3c; /* 버튼 호버 시 색상 */
+}
+
+button:focus {
+  outline: none;
+}

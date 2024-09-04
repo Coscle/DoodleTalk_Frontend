@@ -1,0 +1,64 @@
+/* src/components/Register.css */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* 화면 전체 높이 */
+    background-color: #f0f0f0; /* 배경색 */
+    padding: 40px; /* 패딩 증가 */
+  }
+  
+  .register-form {
+    background: white;
+    padding: 30px; /* 패딩 증가 */
+    border-radius: 8px; /* 모서리 둥글게 */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* 그림자 효과 증가 */
+    width: 100%;
+    max-width: 500px; /* 최대 너비 증가 */
+  }
+  
+  h2 {
+    font-size: 3rem; /* 제목 폰트 크기 증가 */
+    margin-bottom: 30px; /* 제목과 폼 사이 여백 증가 */
+    color: #333; /* 텍스트 색상 */
+  }
+  
+  .form-group {
+    margin-bottom: 20px; /* 입력 필드와 레이블 사이의 간격 증가 */
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px; /* 레이블과 입력 필드 사이 여백 증가 */
+    font-size: 1.2rem; /* 레이블 폰트 크기 증가 */
+  }
+  
+  input {
+    width: 93%; /* 입력 필드 너비를 100%로 설정 */
+    padding: 15px; /* 입력 필드 패딩 증가 */
+    border-radius: 6px; /* 입력 필드 모서리 둥글게 */
+    border: 1px solid #ccc;
+    font-size: 1.2rem; /* 입력 필드 폰트 크기 증가 */
+  }
+  
+  button {
+    width: 100%; /* 버튼 너비를 100%로 설정 */
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: #4caf50; /* 버튼 배경색 */
+    color: white;
+    font-size: 1.5rem; /* 버튼 폰트 크기 증가 */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #388e3c; /* 버튼 호버 시 색상 */
+  }
+  
+  button:focus {
+    outline: none;
+  }
